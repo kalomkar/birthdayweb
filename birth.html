@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Bestie 💖</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #090014;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -3;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255, 0, 153, .18), transparent 30%),
+        radial-gradient(circle at 80% 30%, rgba(111, 0, 255, .2), transparent 30%),
+        radial-gradient(circle at 50% 90%, rgba(0, 217, 255, .12), transparent 35%),
+        #090014;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, .025),
+        transparent
+      );
+      animation: backgroundMove 8s linear infinite;
+    }
+
+    @keyframes backgroundMove {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+
+    /* INTRO */
+
+    #intro {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: radial-gradient(circle at center, #260047, #090014 70%);
+      transition: 1s ease;
+    }
+
+    #intro.hide {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .intro-content {
+      padding: 25px;
+    }
+
+    .intro-emoji {
+      font-size: 65px;
+      animation: bounce 1.5s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-18px) rotate(5deg);
+      }
+    }
+
+    .intro-title {
+      font-size: clamp(2.3rem, 8vw, 5rem);
+      margin: 15px 0;
+      background: linear-gradient(
+        90deg,
+        #ff4da6,
+        #fff,
+        #a855f7,
+        #00e5ff,
+        #ff4da6
+      );
+      background-size: 300%;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: gradientText 5s linear infinite;
+    }
+
+    @keyframes gradientText {
+      0% {
+        background-position: 0%;
+      }
+
+      100% {
+        background-position: 300%;
+      }
+    }
+
+    .intro-sub {
+      color: #d7c9df;
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+
+    .open-btn {
+      border: none;
+      padding: 16px 32px;
+      border-radius: 50px;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      background: linear-gradient(90deg, #ff1493, #8b5cf6);
+      box-shadow:
+        0 0 15px #ff1493,
+        0 0 40px rgba(139, 92, 246, .6);
+      animation: pulse 1.8s infinite;
+      transition: .3s;
+    }
+
+    .open-btn:hover {
+      transform: scale(1.08);
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        box-shadow: 0 0 15px #ff1493;
+      }
+
+      50% {
+        box-shadow:
+          0 0 30px #ff1493,
+          0 0 70px #8b5cf6;
+      }
+    }
+
+    /* MAIN */
+
+    main {
+      opacity: 0;
+      transition: 1.5s ease;
+    }
+
+    main.show {
+      opacity: 1;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 100px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .container {
+      width: min(1100px, 100%);
+      margin: auto;
+    }
+
+    /* HERO */
+
+    .hero {
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .small-text {
+      color: #ff91cf;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: .85rem;
+      margin-bottom: 15px;
+    }
+
+    .hero-title {
+      font-size: clamp(3rem, 10vw, 8rem);
+      font-weight: 800;
+      line-height: .95;
+      background: linear-gradient(
+        90deg,
+        #ff4da6,
+        #ffffff,
+        #c084fc,
+        #67e8f9,
+        #ff4da6
+      );
+      background-size: 300%;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: gradientText 5s linear infinite;
+      text-shadow: 0 0 40px rgba(255, 20, 147, .25);
+    }
+
+    .name {
+      font-family: "Great Vibes", cursive;
+      font-size: clamp(4rem, 13vw, 9rem);
+      color: #ff7ac8;
+      text-shadow:
+        0 0 10px #ff1493,
+        0 0 30px #ff1493,
+        0 0 70px rgba(255, 20, 147, .5);
+      animation: nameFloat 3s ease-in-out infinite;
+    }
+
+    @keyframes nameFloat {
+      0%, 100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-12px);
+      }
+    }
+
+    .hero-desc {
+      max-width: 650px;
+      color: #d8cbe0;
+      margin: 25px auto;
+      font-size: 1.05rem;
+    }
+
+    .scroll {
+      position: absolute;
+      bottom: 30px;
+      animation: scrollBounce 1.5s infinite;
+      color: #cdbbd8;
+      font-size: .8rem;
+    }
+
+    @keyframes scrollBounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(10px);
+      }
+    }
+
+    /* SECTION TITLE */
+
+    .section-title {
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #fff, #ff7ac8, #b794f4);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .section-subtitle {
+      color: #bfb0c7;
+      margin-bottom: 45px;
+    }
+
+    /* MESSAGE */
+
+    .message-card {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 30px;
+      background: rgba(255,255,255,.055);
+      backdrop-filter: blur(15px);
+      box-shadow: 0 20px 80px rgba(0,0,0,.35);
+    }
+
+    .typing {
+      font-size: clamp(1rem, 2.5vw, 1.35rem);
+      line-height: 2;
+      color: #eee5f2;
+      min-height: 160px;
+      white-space: pre-line;
+    }
+
+    .cursor {
+      color: #ff4da6;
+      animation: blink .7s infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    /* =========================
+       PHOTO SECTION
+    ========================= */
+
+    .add-photo-btn {
+      display: inline-block;
+      padding: 15px 30px;
+      margin-bottom: 35px;
+      border-radius: 50px;
+      cursor: pointer;
+      color: white;
+      font-weight: 600;
+      background: linear-gradient(90deg, #ff1493, #8b5cf6);
+      box-shadow:
+        0 0 15px rgba(255,20,147,.6),
+        0 0 35px rgba(139,92,246,.3);
+      transition: .3s;
+    }
+
+    .add-photo-btn:hover {
+      transform: scale(1.08);
+      box-shadow:
+        0 0 25px #ff1493,
+        0 0 50px #8b5cf6;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .photo-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 25px;
+      aspect-ratio: 4 / 5;
+      cursor: pointer;
+      transform-style: preserve-3d;
+      transition: .5s;
+      border: 1px solid rgba(255,255,255,.1);
+      background: rgba(255,255,255,.05);
+      animation: photoIn .7s ease;
+    }
+
+    .photo-card:hover {
+      transform: translateY(-12px) rotateX(4deg) rotateY(-4deg);
+      box-shadow: 0 25px 50px rgba(255,20,147,.2);
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: .7s;
+    }
+
+    .photo-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .photo-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 35px 15px 20px;
+      background: linear-gradient(transparent, rgba(0,0,0,.9));
+      text-align: left;
+    }
+
+    .photo-caption h3 {
+      font-size: 1rem;
+    }
+
+    .photo-caption p {
+      font-size: .75rem;
+      color: #d2c5d8;
+      margin-top: 3px;
+    }
+
+    @keyframes photoIn {
+      from {
+        opacity: 0;
+        transform: scale(.7) translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    /* TIMELINE */
+
+    .timeline {
+      max-width: 750px;
+      margin: auto;
+      position: relative;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      background: linear-gradient(#ff1493, #8b5cf6, #00d9ff);
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .memory {
+      width: 45%;
+      padding: 25px;
+      margin: 40px 0;
+      border-radius: 22px;
+      background: rgba(255,255,255,.055);
+      border: 1px solid rgba(255,255,255,.1);
+      backdrop-filter: blur(12px);
+      text-align: left;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: 1s;
+    }
+
+    .memory.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .memory:nth-child(even) {
+      margin-left: auto;
+    }
+
+    .memory h3 {
+      color: #ff80c6;
+      margin-bottom: 8px;
+    }
+
+    .memory p {
+      color: #cfc2d5;
+      font-size: .9rem;
+      line-height: 1.7;
+    }
+
+    /* SURPRISE */
+
+    .surprise-btn {
+      margin-top: 30px;
+      padding: 18px 35px;
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 50px;
+      color: white;
+      background: linear-gradient(
+        90deg,
+        rgba(255,20,147,.8),
+        rgba(139,92,246,.8)
+      );
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: .3s;
+    }
+
+    .surprise-btn:hover {
+      transform: scale(1.08);
+    }
+
+    #secret {
+      max-width: 700px;
+      margin: 35px auto 0;
+      padding: 30px;
+      border-radius: 25px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.1);
+      display: none;
+      animation: secretIn 1s ease;
+      white-space: pre-line;
+      line-height: 2;
+    }
+
+    #secret.show {
+      display: block;
+    }
+
+    @keyframes secretIn {
+      from {
+        opacity: 0;
+        transform: scale(.8) translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    /* FINAL */
+
+    .final-text {
+      font-size: clamp(1.2rem, 3vw, 2rem);
+      color: #dcd1e2;
+      line-height: 1.8;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .final-name {
+      margin-top: 35px;
+      font-family: "Great Vibes", cursive;
+      font-size: clamp(4rem, 12vw, 8rem);
+      color: #ff69b4;
+      text-shadow: 0 0 40px #ff1493;
+      animation: finalGlow 2s infinite alternate;
+    }
+
+    @keyframes finalGlow {
+      from {
+        text-shadow: 0 0 20px #ff1493;
+      }
+
+      to {
+        text-shadow:
+          0 0 20px #ff1493,
+          0 0 60px #ff1493,
+          0 0 100px #8b5cf6;
+      }
+    }
+
+    /* FLOATING */
+
+    .floating {
+      position: fixed;
+      pointer-events: none;
+      z-index: 10;
+      animation: floatUp linear forwards;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(100vh) scale(.5) rotate(0);
+        opacity: 0;
+      }
+
+      15% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(-120px) scale(1.3) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    /* CONFETTI */
+
+    .confetti {
+      position: fixed;
+      width: 9px;
+      height: 15px;
+      top: -20px;
+      z-index: 9998;
+      animation: confettiFall linear forwards;
+    }
+
+    @keyframes confettiFall {
+      to {
+        transform: translateY(110vh) rotate(720deg);
+      }
+    }
+
+    /* MUSIC */
+
+    #musicBtn {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.2);
+      background: rgba(255,20,147,.2);
+      backdrop-filter: blur(10px);
+      color: white;
+      cursor: pointer;
+      z-index: 1000;
+      box-shadow: 0 0 20px rgba(255,20,147,.4);
+    }
+
+    /* MODAL */
+
+    #modal {
+      position: fixed;
+      inset: 0;
+      z-index: 9997;
+      background: rgba(0,0,0,.85);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    #modal.show {
+      display: flex;
+    }
+
+    #modal img {
+      max-width: 90%;
+      max-height: 85vh;
+      border-radius: 20px;
+      box-shadow: 0 0 80px rgba(255,20,147,.35);
+    }
+
+    #closeModal {
+      position: absolute;
+      top: 25px;
+      right: 30px;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 650px) {
+
+      section {
+        padding: 80px 16px;
+      }
+
+      .message-card {
+        padding: 25px;
+      }
+
+      .timeline::before {
+        left: 10px;
+      }
+
+      .memory,
+      .memory:nth-child(even) {
+        width: calc(100% - 35px);
+        margin-left: 35px;
+      }
+
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .photo-caption {
+        padding: 25px 10px 10px;
+      }
+
+      .photo-caption h3 {
+        font-size: .8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- INTRO -->
+
+  <div id="intro">
+
+    <div class="intro-content">
+
+      <div class="intro-emoji">
+        🎁
+      </div>
+
+      <h1 class="intro-title">
+        Heyyy Bestieee! 💖
+      </h1>
+
+      <p class="intro-sub">
+        I made something special for you...
+      </p>
+
+      <button class="open-btn" onclick="openSurprise()">
+        Open Your Surprise 🎁
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- MAIN -->
+
+  <main id="main">
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+      <div class="container">
+
+        <div class="small-text">
+          Today is your special day ✨
+        </div>
+
+        <h1 class="hero-title">
+          HAPPY<br>BIRTHDAY
+        </h1>
+
+        <div class="name" id="heroName">
+          Bestie 💗
+        </div>
+
+        <p class="hero-desc">
+          Today isn't just another day...
+          it's the day one of the most amazing people
+          in my life came into this world. 🥹💖
+        </p>
+
+      </div>
+
+      <div class="scroll">
+        ↓ Scroll for your surprise ↓
+      </div>
+
+    </section>
+
+
+    <!-- MESSAGE -->
+
+    <section>
+
+      <div class="container">
+
+        <h2 class="section-title">
+          A Little Something For You 💌
+        </h2>
+
+        <p class="section-subtitle">
+          Read this slowly... 🥹
+        </p>
+
+        <div class="message-card">
+
+          <div class="typing" id="typingText"></div>
+
+          <span class="cursor">
+            |
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PHOTO MEMORIES
+    ========================== -->
+
+    <section>
+
+      <div class="container">
+
+        <h2 class="section-title">
+          Our Little Memories 📸
+        </h2>
+
+        <p class="section-subtitle">
+          Add your favorite memories here 💕
+        </p>
+
+
+        <!-- ADD PHOTO BUTTON -->
+
+        <label class="add-photo-btn">
+
+          ➕ Add Your Photos
+
+          <input
+            type="file"
+            id="photoInput"
+            accept="image/*"
+            multiple
+            hidden
+          >
+
+        </label>
+
+
+        <!-- PHOTO GALLERY -->
+
+        <div class="gallery" id="gallery">
+
+          <!-- Selected photos will appear here -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- TIMELINE -->
+
+    <section>
+
+      <div class="container">
+
+        <h2 class="section-title">
+          Our Journey 🫶
+        </h2>
+
+        <p class="section-subtitle">
+          A few moments from our story...
+        </p>
+
+        <div class="timeline">
+
+          <div class="memory">
+
+            <h3>
+              ✨ The Beginning
+            </h3>
+
+            <p>
+              The day we first became friends.
+              Didn't know then that you'd become
+              such an important person in my life.
+            </p>
+
+          </div>
+
+
+          <div class="memory">
+
+            <h3>
+              😂 The Crazy Era
+            </h3>
+
+            <p>
+              All those stupid jokes, random conversations
+              and moments that somehow became our best memories.
+            </p>
+
+          </div>
+
+
+          <div class="memory">
+
+            <h3>
+              🥹 The Real Talks
+            </h3>
+
+            <p>
+              Through good days and bad days,
+              somehow we were always there for each other.
+            </p>
+
+          </div>
+
+
+          <div class="memory">
+
+            <h3>
+              💖 Today
+            </h3>
+
+            <p>
+              And here we are...
+              celebrating another beautiful year of your life.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SECRET SURPRISE -->
+
+    <section>
+
+      <div class="container">
+
+        <h2 class="section-title">
+          One More Surprise 👀
+        </h2>
+
+        <p class="section-subtitle">
+          Okay okay... this is the last one. Maybe. 😂
+        </p>
+
+        <button
+          class="surprise-btn"
+          onclick="showSecret()"
+        >
+          Click Me 💌
+        </button>
+
+        <div id="secret">
+
+          <p id="secretText"></p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+
+    <section>
+
+      <div class="container">
+
+        <div class="small-text">
+          Before you go...
+        </div>
+
+        <p class="final-text">
+
+          No matter where life takes us,
+          I hope you always keep that beautiful smile,
+          keep chasing your dreams,
+          and keep being the amazing person you are. 💖
+
+          <br><br>
+
+          You deserve all the happiness,
+          love and success in this world.
+
+        </p>
+
+        <div class="final-name" id="finalName">
+          Happy Birthday 💗
+        </div>
+
+        <p style="margin-top:20px;color:#aaa;">
+          Made with ❤️ just for you
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- MUSIC -->
+
+  <button
+    id="musicBtn"
+    onclick="toggleMusic()"
+  >
+    🎵
+  </button>
+
+
+  <audio id="music" loop>
+
+    <source
+      src="birthday.mp3"
+      type="audio/mpeg"
+    >
+
+  </audio>
+
+
+  <!-- IMAGE MODAL -->
+
+  <div
+    id="modal"
+    onclick="closeImage()"
+  >
+
+    <span id="closeModal">
+      ×
+    </span>
+
+    <img
+      id="modalImg"
+      src=""
+      alt="Full Image"
+    >
+
+  </div>
+
+
+  <script>
+
+    /* ==================================
+       ✏️ FRIEND NAME
+    ================================== */
+
+    const FRIEND_NAME = "Your Bestie";
+
+
+    /* ==================================
+       💌 MAIN MESSAGE
+    ================================== */
+
+    const birthdayMessage = `
+Happy Birthday to one of the most wonderful people I've ever met! 💖
+
+I honestly don't know how to put into words how special you are to me.
+
+Thank you for all the laughs, all the random conversations, all the crazy memories, and for simply being YOU. 🥹
+
+I hope this new chapter of your life brings you endless happiness, beautiful opportunities, lots of love and everything your heart wishes for.
+
+Never forget how amazing you are. ✨
+
+Happy Birthday once again, Bestie! 🎂💗
+`;
+
+
+    /* ==================================
+       💌 SECRET MESSAGE
+    ================================== */
+
+    const secretMessage = `
+If you're reading this...
+
+Just know that no matter what happens,
+I'll always be rooting for you. 🫶
+
+Keep smiling.
+Keep dreaming.
+Keep being you.
+
+And please remember...
+
+You're seriously one of the best people
+I've ever had in my life. 💖
+
+Happy Birthdayyyy! 🎂✨
+`;
+
+
+    /* ==================================
+       SET NAME
+    ================================== */
+
+    document.getElementById("heroName").textContent =
+      FRIEND_NAME + " 💗";
+
+    document.getElementById("finalName").textContent =
+      "Happy Birthday " + FRIEND_NAME + " 💗";
+
+
+    /* ==================================
+       OPEN SURPRISE
+    ================================== */
+
+    function openSurprise() {
+
+      document.getElementById("intro")
+        .classList.add("hide");
+
+      document.getElementById("main")
+        .classList.add("show");
+
+      startEffects();
+
+      setTimeout(() => {
+        typeMessage();
+      }, 1200);
+
+      const music =
+        document.getElementById("music");
+
+      music.play().catch(() => {
+        console.log(
+          "Music requires user interaction."
+        );
+      });
+
+    }
+
+
+    /* ==================================
+       TYPEWRITER
+    ================================== */
+
+    let messageIndex = 0;
+
+    function typeMessage() {
+
+      const element =
+        document.getElementById("typingText");
+
+      if (messageIndex < birthdayMessage.length) {
+
+        element.textContent +=
+          birthdayMessage.charAt(messageIndex);
+
+        messageIndex++;
+
+        setTimeout(typeMessage, 30);
+
+      }
+
+    }
+
+
+    /* ==================================
+       FLOATING ELEMENTS
+    ================================== */
+
+    const floatingSymbols = [
+      "💖",
+      "💕",
+      "💗",
+      "💓",
+      "✨",
+      "⭐",
+      "🌸",
+      "🦋",
+      "💫"
+    ];
+
+
+    function createFloating() {
+
+      const item =
+        document.createElement("div");
+
+      item.className = "floating";
+
+      item.textContent =
+        floatingSymbols[
+          Math.floor(
+            Math.random() *
+            floatingSymbols.length
+          )
+        ];
+
+      item.style.left =
+        Math.random() * 100 + "vw";
+
+      item.style.fontSize =
+        (15 + Math.random() * 25) + "px";
+
+      item.style.animationDuration =
+        (5 + Math.random() * 7) + "s";
+
+      document.body.appendChild(item);
+
+      setTimeout(() => {
+        item.remove();
+      }, 13000);
+
+    }
+
+
+    /* ==================================
+       CONFETTI
+    ================================== */
+
+    function createConfetti() {
+
+      const colors = [
+        "#ff1493",
+        "#8b5cf6",
+        "#00e5ff",
+        "#ffd700",
+        "#ffffff",
+        "#ff69b4"
+      ];
+
+      for (let i = 0; i < 120; i++) {
+
+        const confetti =
+          document.createElement("div");
+
+        confetti.className =
+          "confetti";
+
+        confetti.style.left =
+          Math.random() * 100 + "vw";
+
+        confetti.style.background =
+          colors[
+            Math.floor(
+              Math.random() * colors.length
+            )
+          ];
+
+        confetti.style.animationDuration =
+          (2 + Math.random() * 4) + "s";
+
+        confetti.style.animationDelay =
+          Math.random() * 2 + "s";
+
+        document.body.appendChild(confetti);
+
+        setTimeout(() => {
+          confetti.remove();
+        }, 7000);
+
+      }
+
+    }
+
+
+    /* ==================================
+       START EFFECTS
+    ================================== */
+
+    function startEffects() {
+
+      createConfetti();
+
+      setInterval(
+        createFloating,
+        450
+      );
+
+    }
+
+
+    /* ==================================
+       SECRET MESSAGE
+    ================================== */
+
+    function showSecret() {
+
+      const secret =
+        document.getElementById("secret");
+
+      const text =
+        document.getElementById("secretText");
+
+      secret.classList.add("show");
+
+      text.textContent = "";
+
+      let i = 0;
+
+      function typeSecret() {
+
+        if (i < secretMessage.length) {
+
+          text.textContent +=
+            secretMessage.charAt(i);
+
+          i++;
+
+          setTimeout(
+            typeSecret,
+            35
+          );
+
+        }
+
+      }
+
+      typeSecret();
+
+      createConfetti();
+
+      for (let i = 0; i < 30; i++) {
+
+        setTimeout(() => {
+          createFloating();
+        }, i * 80);
+
+      }
+
+    }
+
+
+    /* ==================================
+       SCROLL REVEAL
+    ================================== */
+
+    const observer =
+      new IntersectionObserver(
+        entries => {
+
+          entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+              entry.target
+                .classList
+                .add("show");
+
+            }
+
+          });
+
+        },
+        {
+          threshold: .15
+        }
+      );
+
+
+    document
+      .querySelectorAll(".memory")
+      .forEach(card =>
+        observer.observe(card)
+      );
+
+
+    /* ==================================
+       IMAGE MODAL
+    ================================== */
+
+    function openImage(imageURL) {
+
+      document.getElementById("modalImg")
+        .src = imageURL;
+
+      document.getElementById("modal")
+        .classList.add("show");
+
+    }
+
+
+    function closeImage() {
+
+      document.getElementById("modal")
+        .classList.remove("show");
+
+    }
+
+
+    /* ==================================
+       🎯 ADD PHOTOS BUTTON
+    ================================== */
+
+    const photoInput =
+      document.getElementById("photoInput");
+
+    const gallery =
+      document.getElementById("gallery");
+
+
+    photoInput.addEventListener(
+      "change",
+      function () {
+
+        const files = this.files;
+
+        for (const file of files) {
+
+          if (!file.type.startsWith("image/")) {
+            continue;
+          }
+
+
+          const imageURL =
+            URL.createObjectURL(file);
+
+
+          const card =
+            document.createElement("div");
+
+          card.className =
+            "photo-card";
+
+
+          const img =
+            document.createElement("img");
+
+          img.src =
+            imageURL;
+
+          img.alt =
+            "My Birthday Memory";
+
+
+          const caption =
+            document.createElement("div");
+
+          caption.className =
+            "photo-caption";
+
+
+          caption.innerHTML = `
+            <h3>Beautiful Memory 💕</h3>
+            <p>One moment, forever remembered.</p>
+          `;
+
+
+          card.appendChild(img);
+
+          card.appendChild(caption);
+
+
+          gallery.appendChild(card);
+
+
+          /* Click photo for fullscreen */
+
+          card.addEventListener(
+            "click",
+            function (event) {
+
+              event.stopPropagation();
+
+              openImage(imageURL);
+
+            }
+          );
+
+        }
+
+
+        /* Same photo ko dobara select karne ke liye */
+
+        this.value = "";
+
+      }
+    );
+
+
+    /* ==================================
+       MUSIC
+    ================================== */
+
+    let musicPlaying = false;
+
+
+    function toggleMusic() {
+
+      const music =
+        document.getElementById("music");
+
+      const button =
+        document.getElementById("musicBtn");
+
+
+      if (musicPlaying) {
+
+        music.pause();
+
+        button.textContent =
+          "🎵";
+
+        musicPlaying = false;
+
+      } else {
+
+        music.play();
+
+        button.textContent =
+          "🔊";
+
+        musicPlaying = true;
+
+      }
+
+    }
+
+
+    /* ==================================
+       ESC KEY
+    ================================== */
+
+    document.addEventListener(
+      "keydown",
+      e => {
+
+        if (e.key === "Escape") {
+          closeImage();
+        }
+
+      }
+    );
+
+
+    /* ==================================
+       INITIAL CONFETTI
+    ================================== */
+
+    setTimeout(() => {
+
+      createConfetti();
+
+    }, 2500);
+
+  </script>
+
+</body>
+</html>

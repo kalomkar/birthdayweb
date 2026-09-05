@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Happy Birthday Sneha madam ji 💖</title>
 
   <style>
@@ -52,11 +53,18 @@
     }
 
     @keyframes backgroundMove {
-      0% { transform: translateX(-100%); }
-      100% { transform: translateX(100%); }
+      0% {
+        transform: translateX(-100%);
+      }
+
+      100% {
+        transform: translateX(100%);
+      }
     }
 
-    /* INTRO */
+    /* =========================
+       INTRO
+    ========================= */
 
     #intro {
       position: fixed;
@@ -66,7 +74,11 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      background: radial-gradient(circle at center, #260047, #090014 70%);
+      background: radial-gradient(
+        circle at center,
+        #260047,
+        #090014 70%
+      );
       transition: 1s ease;
     }
 
@@ -108,6 +120,7 @@
       );
       background-size: 300%;
       -webkit-background-clip: text;
+      background-clip: text;
       color: transparent;
       animation: gradientText 5s linear infinite;
     }
@@ -136,7 +149,11 @@
       font-size: 1rem;
       font-weight: 600;
       cursor: pointer;
-      background: linear-gradient(90deg, #ff1493, #8b5cf6);
+      background: linear-gradient(
+        90deg,
+        #ff1493,
+        #8b5cf6
+      );
       box-shadow:
         0 0 15px #ff1493,
         0 0 40px rgba(139, 92, 246, .6);
@@ -160,7 +177,9 @@
       }
     }
 
-    /* MAIN */
+    /* =========================
+       MAIN
+    ========================= */
 
     main {
       opacity: 0;
@@ -186,7 +205,9 @@
       margin: auto;
     }
 
-    /* HERO */
+    /* =========================
+       HERO
+    ========================= */
 
     .hero {
       flex-direction: column;
@@ -215,6 +236,7 @@
       );
       background-size: 300%;
       -webkit-background-clip: text;
+      background-clip: text;
       color: transparent;
       animation: gradientText 5s linear infinite;
       text-shadow: 0 0 40px rgba(255, 20, 147, .25);
@@ -266,13 +288,21 @@
       }
     }
 
-    /* SECTION TITLE */
+    /* =========================
+       SECTION TITLE
+    ========================= */
 
     .section-title {
       font-size: clamp(2.2rem, 6vw, 4rem);
       margin-bottom: 20px;
-      background: linear-gradient(90deg, #fff, #ff7ac8, #b794f4);
+      background: linear-gradient(
+        90deg,
+        #fff,
+        #ff7ac8,
+        #b794f4
+      );
       -webkit-background-clip: text;
+      background-clip: text;
       color: transparent;
     }
 
@@ -281,7 +311,9 @@
       margin-bottom: 45px;
     }
 
-    /* MESSAGE */
+    /* =========================
+       MESSAGE
+    ========================= */
 
     .message-card {
       max-width: 800px;
@@ -325,7 +357,11 @@
       cursor: pointer;
       color: white;
       font-weight: 600;
-      background: linear-gradient(90deg, #ff1493, #8b5cf6);
+      background: linear-gradient(
+        90deg,
+        #ff1493,
+        #8b5cf6
+      );
       box-shadow:
         0 0 15px rgba(255,20,147,.6),
         0 0 35px rgba(139,92,246,.3);
@@ -341,7 +377,10 @@
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+      );
       gap: 25px;
     }
 
@@ -359,8 +398,14 @@
     }
 
     .photo-card:hover {
-      transform: translateY(-12px) rotateX(4deg) rotateY(-4deg);
-      box-shadow: 0 25px 50px rgba(255,20,147,.2);
+      transform:
+        translateY(-12px)
+        rotateX(4deg)
+        rotateY(-4deg);
+
+      box-shadow:
+        0 25px 50px
+        rgba(255,20,147,.2);
     }
 
     .photo-card img {
@@ -380,7 +425,11 @@
       left: 0;
       right: 0;
       padding: 35px 15px 20px;
-      background: linear-gradient(transparent, rgba(0,0,0,.9));
+      background:
+        linear-gradient(
+          transparent,
+          rgba(0,0,0,.9)
+        );
       text-align: left;
     }
 
@@ -397,16 +446,22 @@
     @keyframes photoIn {
       from {
         opacity: 0;
-        transform: scale(.7) translateY(30px);
+        transform:
+          scale(.7)
+          translateY(30px);
       }
 
       to {
         opacity: 1;
-        transform: scale(1) translateY(0);
+        transform:
+          scale(1)
+          translateY(0);
       }
     }
 
-    /* TIMELINE */
+    /* =========================
+       TIMELINE
+    ========================= */
 
     .timeline {
       max-width: 750px;
@@ -418,7 +473,12 @@
       content: "";
       position: absolute;
       width: 2px;
-      background: linear-gradient(#ff1493, #8b5cf6, #00d9ff);
+      background:
+        linear-gradient(
+          #ff1493,
+          #8b5cf6,
+          #00d9ff
+        );
       top: 0;
       bottom: 0;
       left: 50%;
@@ -459,7 +519,9 @@
       line-height: 1.7;
     }
 
-    /* SURPRISE */
+    /* =========================
+       SURPRISE
+    ========================= */
 
     .surprise-btn {
       margin-top: 30px;
@@ -467,11 +529,12 @@
       border: 1px solid rgba(255,255,255,.2);
       border-radius: 50px;
       color: white;
-      background: linear-gradient(
-        90deg,
-        rgba(255,20,147,.8),
-        rgba(139,92,246,.8)
-      );
+      background:
+        linear-gradient(
+          90deg,
+          rgba(255,20,147,.8),
+          rgba(139,92,246,.8)
+        );
       cursor: pointer;
       font-size: 1rem;
       font-weight: 600;
@@ -502,16 +565,22 @@
     @keyframes secretIn {
       from {
         opacity: 0;
-        transform: scale(.8) translateY(30px);
+        transform:
+          scale(.8)
+          translateY(30px);
       }
 
       to {
         opacity: 1;
-        transform: scale(1) translateY(0);
+        transform:
+          scale(1)
+          translateY(0);
       }
     }
 
-    /* FINAL */
+    /* =========================
+       FINAL
+    ========================= */
 
     .final-text {
       font-size: clamp(1.2rem, 3vw, 2rem);
@@ -532,7 +601,8 @@
 
     @keyframes finalGlow {
       from {
-        text-shadow: 0 0 20px #ff1493;
+        text-shadow:
+          0 0 20px #ff1493;
       }
 
       to {
@@ -543,18 +613,24 @@
       }
     }
 
-    /* FLOATING */
+    /* =========================
+       FLOATING
+    ========================= */
 
     .floating {
       position: fixed;
       pointer-events: none;
       z-index: 10;
-      animation: floatUp linear forwards;
+      animation:
+        floatUp linear forwards;
     }
 
     @keyframes floatUp {
       0% {
-        transform: translateY(100vh) scale(.5) rotate(0);
+        transform:
+          translateY(100vh)
+          scale(.5)
+          rotate(0);
         opacity: 0;
       }
 
@@ -563,12 +639,17 @@
       }
 
       100% {
-        transform: translateY(-120px) scale(1.3) rotate(360deg);
+        transform:
+          translateY(-120px)
+          scale(1.3)
+          rotate(360deg);
         opacity: 0;
       }
     }
 
-    /* CONFETTI */
+    /* =========================
+       CONFETTI
+    ========================= */
 
     .confetti {
       position: fixed;
@@ -576,16 +657,21 @@
       height: 15px;
       top: -20px;
       z-index: 9998;
-      animation: confettiFall linear forwards;
+      animation:
+        confettiFall linear forwards;
     }
 
     @keyframes confettiFall {
       to {
-        transform: translateY(110vh) rotate(720deg);
+        transform:
+          translateY(110vh)
+          rotate(720deg);
       }
     }
 
-    /* MUSIC */
+    /* =========================
+       MUSIC
+    ========================= */
 
     #musicBtn {
       position: fixed;
@@ -600,10 +686,14 @@
       color: white;
       cursor: pointer;
       z-index: 1000;
-      box-shadow: 0 0 20px rgba(255,20,147,.4);
+      box-shadow:
+        0 0 20px
+        rgba(255,20,147,.4);
     }
 
-    /* MODAL */
+    /* =========================
+       MODAL
+    ========================= */
 
     #modal {
       position: fixed;
@@ -624,7 +714,9 @@
       max-width: 90%;
       max-height: 85vh;
       border-radius: 20px;
-      box-shadow: 0 0 80px rgba(255,20,147,.35);
+      box-shadow:
+        0 0 80px
+        rgba(255,20,147,.35);
     }
 
     #closeModal {
@@ -635,7 +727,9 @@
       cursor: pointer;
     }
 
-    /* MOBILE */
+    /* =========================
+       MOBILE
+    ========================= */
 
     @media (max-width: 650px) {
 
@@ -675,7 +769,9 @@
 
 <body>
 
-  <!-- INTRO -->
+  <!-- =========================
+       INTRO
+  ========================= -->
 
   <div id="intro">
 
@@ -693,7 +789,10 @@
         I made something special for you...
       </p>
 
-      <button class="open-btn" onclick="openSurprise()">
+      <button
+        class="open-btn"
+        onclick="openSurprise()"
+      >
         Open Your Surprise 🎁
       </button>
 
@@ -702,7 +801,9 @@
   </div>
 
 
-  <!-- MAIN -->
+  <!-- =========================
+       MAIN
+  ========================= -->
 
   <main id="main">
 
@@ -721,7 +822,7 @@
         </h1>
 
         <div class="name" id="heroName">
-          Sneha  💗
+          Sneha 💗
         </div>
 
         <p class="hero-desc">
@@ -755,7 +856,10 @@
 
         <div class="message-card">
 
-          <div class="typing" id="typingText"></div>
+          <div
+            class="typing"
+            id="typingText"
+          ></div>
 
           <span class="cursor">
             |
@@ -768,9 +872,7 @@
     </section>
 
 
-    <!-- =========================
-         PHOTO MEMORIES
-    ========================== -->
+    <!-- PHOTO MEMORIES -->
 
     <section>
 
@@ -784,15 +886,27 @@
           Add your favorite memories here 💕
         </p>
 
+        <!-- PHOTO UPLOAD -->
 
-     
-        <!-- PHOTO GALLERY -->
+        <label
+          for="photoInput"
+          class="add-photo-btn"
+        >
+          📸 Add Your Memories
+        </label>
 
-        <div class="gallery" id="gallery">
+        <input
+          type="file"
+          id="photoInput"
+          accept="image/*"
+          multiple
+          hidden
+        >
 
-          <!-- Selected photos will appear here -->
-
-        </div>
+        <div
+          class="gallery"
+          id="gallery"
+        ></div>
 
       </div>
 
@@ -829,7 +943,6 @@
 
           </div>
 
-
           <div class="memory">
 
             <h3>
@@ -843,7 +956,6 @@
 
           </div>
 
-
           <div class="memory">
 
             <h3>
@@ -856,7 +968,6 @@
             </p>
 
           </div>
-
 
           <div class="memory">
 
@@ -934,7 +1045,10 @@
 
         </p>
 
-        <div class="final-name" id="finalName">
+        <div
+          class="final-name"
+          id="finalName"
+        >
           Happy Birthday 💗
         </div>
 
@@ -949,7 +1063,9 @@
   </main>
 
 
-  <!-- MUSIC -->
+  <!-- =========================
+       MUSIC
+  ========================= -->
 
   <button
     id="musicBtn"
@@ -958,18 +1074,20 @@
     🎵
   </button>
 
-
-  <audio id="music" loop>
-
+  <audio
+    id="music"
+    loop
+  >
     <source
       src="birthday.mp3"
       type="audio/mpeg"
     >
-
   </audio>
 
 
-  <!-- IMAGE MODAL -->
+  <!-- =========================
+       IMAGE MODAL
+  ========================= -->
 
   <div
     id="modal"
@@ -991,16 +1109,16 @@
 
   <script>
 
-    /* ==================================
-       ✏️ FRIEND NAME
-    ================================== */
+    /* =========================
+       FRIEND NAME
+    ========================= */
 
     const FRIEND_NAME = "Sneha madam ji";
 
 
-    /* ==================================
-       💌 MAIN MESSAGE
-    ================================== */
+    /* =========================
+       MAIN MESSAGE
+    ========================= */
 
     const birthdayMessage = `
 Happy Birthday to one of the most wonderful people I've ever met! 💖
@@ -1017,9 +1135,9 @@ Happy Birthday once again, Bestie! 🎂💗
 `;
 
 
-    /* ==================================
-       💌 SECRET MESSAGE
-    ================================== */
+    /* =========================
+       SECRET MESSAGE
+    ========================= */
 
     const secretMessage = `
 If you're reading this...
@@ -1040,28 +1158,32 @@ Happy Birthdayyyy! 🎂✨
 `;
 
 
-    /* ==================================
+    /* =========================
        SET NAME
-    ================================== */
+    ========================= */
 
     document.getElementById("heroName").textContent =
-      Sneha madam ji + " 💗";
+      FRIEND_NAME + " 💗";
 
     document.getElementById("finalName").textContent =
-      "Happy Birthday " + Sneha madam ji + " 💗";
+      "Happy Birthday " + FRIEND_NAME + " 💗";
 
 
-    /* ==================================
+    /* =========================
        OPEN SURPRISE
-    ================================== */
+    ========================= */
 
     function openSurprise() {
 
-      document.getElementById("intro")
-        .classList.add("hide");
+      const intro =
+        document.getElementById("intro");
 
-      document.getElementById("main")
-        .classList.add("show");
+      const main =
+        document.getElementById("main");
+
+      intro.classList.add("hide");
+
+      main.classList.add("show");
 
       startEffects();
 
@@ -1072,43 +1194,65 @@ Happy Birthdayyyy! 🎂✨
       const music =
         document.getElementById("music");
 
-      music.play().catch(() => {
-        console.log(
-          "Music requires user interaction."
-        );
-      });
+      music.play()
+        .then(() => {
+
+          musicPlaying = true;
+
+          document.getElementById(
+            "musicBtn"
+          ).textContent = "🔊";
+
+        })
+        .catch(() => {
+
+          console.log(
+            "Music could not autoplay."
+          );
+
+        });
 
     }
 
 
-    /* ==================================
+    /* =========================
        TYPEWRITER
-    ================================== */
+    ========================= */
 
     let messageIndex = 0;
 
     function typeMessage() {
 
       const element =
-        document.getElementById("typingText");
+        document.getElementById(
+          "typingText"
+        );
 
-      if (messageIndex < birthdayMessage.length) {
+      if (
+        messageIndex <
+        birthdayMessage.length
+      ) {
 
         element.textContent +=
-          birthdayMessage.charAt(messageIndex);
+          birthdayMessage.charAt(
+            messageIndex
+          );
 
         messageIndex++;
 
-        setTimeout(typeMessage, 30);
+        setTimeout(
+          typeMessage,
+          30
+        );
 
       }
 
     }
 
 
-    /* ==================================
+    /* =========================
        FLOATING ELEMENTS
-    ================================== */
+    ========================= */
 
     const floatingSymbols = [
       "💖",
@@ -1156,9 +1300,9 @@ Happy Birthdayyyy! 🎂✨
     }
 
 
-    /* ==================================
+    /* =========================
        CONFETTI
-    ================================== */
+    ========================= */
 
     function createConfetti() {
 
@@ -1171,10 +1315,16 @@ Happy Birthdayyyy! 🎂✨
         "#ff69b4"
       ];
 
-      for (let i = 0; i < 120; i++) {
+      for (
+        let i = 0;
+        i < 120;
+        i++
+      ) {
 
         const confetti =
-          document.createElement("div");
+          document.createElement(
+            "div"
+          );
 
         confetti.className =
           "confetti";
@@ -1185,7 +1335,8 @@ Happy Birthdayyyy! 🎂✨
         confetti.style.background =
           colors[
             Math.floor(
-              Math.random() * colors.length
+              Math.random() *
+              colors.length
             )
           ];
 
@@ -1195,7 +1346,9 @@ Happy Birthdayyyy! 🎂✨
         confetti.style.animationDelay =
           Math.random() * 2 + "s";
 
-        document.body.appendChild(confetti);
+        document.body.appendChild(
+          confetti
+        );
 
         setTimeout(() => {
           confetti.remove();
@@ -1206,11 +1359,19 @@ Happy Birthdayyyy! 🎂✨
     }
 
 
-    /* ==================================
+    /* =========================
        START EFFECTS
-    ================================== */
+    ========================= */
+
+    let effectsStarted = false;
 
     function startEffects() {
+
+      if (effectsStarted) {
+        return;
+      }
+
+      effectsStarted = true;
 
       createConfetti();
 
@@ -1222,17 +1383,21 @@ Happy Birthdayyyy! 🎂✨
     }
 
 
-    /* ==================================
+    /* =========================
        SECRET MESSAGE
-    ================================== */
+    ========================= */
 
     function showSecret() {
 
       const secret =
-        document.getElementById("secret");
+        document.getElementById(
+          "secret"
+        );
 
       const text =
-        document.getElementById("secretText");
+        document.getElementById(
+          "secretText"
+        );
 
       secret.classList.add("show");
 
@@ -1242,7 +1407,9 @@ Happy Birthdayyyy! 🎂✨
 
       function typeSecret() {
 
-        if (i < secretMessage.length) {
+        if (
+          i < secretMessage.length
+        ) {
 
           text.textContent +=
             secretMessage.charAt(i);
@@ -1262,7 +1429,11 @@ Happy Birthdayyyy! 🎂✨
 
       createConfetti();
 
-      for (let i = 0; i < 30; i++) {
+      for (
+        let i = 0;
+        i < 30;
+        i++
+      ) {
 
         setTimeout(() => {
           createFloating();
@@ -1273,9 +1444,9 @@ Happy Birthdayyyy! 🎂✨
     }
 
 
-    /* ==================================
+    /* =========================
        SCROLL REVEAL
-    ================================== */
+    ========================= */
 
     const observer =
       new IntersectionObserver(
@@ -1283,7 +1454,9 @@ Happy Birthdayyyy! 🎂✨
 
           entries.forEach(entry => {
 
-            if (entry.isIntersecting) {
+            if (
+              entry.isIntersecting
+            ) {
 
               entry.target
                 .classList
@@ -1302,85 +1475,103 @@ Happy Birthdayyyy! 🎂✨
 
     document
       .querySelectorAll(".memory")
-      .forEach(card =>
-        observer.observe(card)
-      );
+      .forEach(card => {
+        observer.observe(card);
+      });
 
 
-    /* ==================================
+    /* =========================
        IMAGE MODAL
-    ================================== */
+    ========================= */
 
     function openImage(imageURL) {
 
-      document.getElementById("modalImg")
-        .src = imageURL;
+      document.getElementById(
+        "modalImg"
+      ).src = imageURL;
 
-      document.getElementById("modal")
-        .classList.add("show");
+      document.getElementById(
+        "modal"
+      ).classList.add("show");
 
     }
 
 
     function closeImage() {
 
-      document.getElementById("modal")
-        .classList.remove("show");
+      document.getElementById(
+        "modal"
+      ).classList.remove("show");
 
     }
 
 
-    /* ==================================
-       🎯 ADD PHOTOS BUTTON
-    ================================== */
+    /* =========================
+       PHOTO UPLOAD
+    ========================= */
 
     const photoInput =
-      document.getElementById("photoInput");
+      document.getElementById(
+        "photoInput"
+      );
 
     const gallery =
-      document.getElementById("gallery");
+      document.getElementById(
+        "gallery"
+      );
 
 
     photoInput.addEventListener(
       "change",
       function () {
 
-        const files = this.files;
+        const files =
+          this.files;
 
-        for (const file of files) {
+        for (
+          const file of files
+        ) {
 
-          if (!file.type.startsWith("image/")) {
+          if (
+            !file.type.startsWith(
+              "image/"
+            )
+          ) {
             continue;
           }
 
-
           const imageURL =
-            URL.createObjectURL(file);
-
+            URL.createObjectURL(
+              file
+            );
 
           const card =
-            document.createElement("div");
+            document.createElement(
+              "div"
+            );
 
           card.className =
             "photo-card";
 
 
           const img =
-            document.createElement("img");
+            document.createElement(
+              "img"
+            );
 
-          img.src =
-            imageURL;
+          img.src = imageURL;
 
           img.alt =
-            "My Birthday Memory";
+            "Birthday Memory";
 
 
           const caption =
-            document.createElement("div");
+            document.createElement(
+              "div"
+            );
 
           caption.className =
             "photo-caption";
-
 
           caption.innerHTML = `
             <h3>Beautiful Memory 💕</h3>
@@ -1390,13 +1581,14 @@ Happy Birthdayyyy! 🎂✨
 
           card.appendChild(img);
 
-          card.appendChild(caption);
+          card.appendChild(
+            caption
+          );
 
+          gallery.appendChild(
+            card
+          );
 
-          gallery.appendChild(card);
-
-
-          /* Click photo for fullscreen */
 
           card.addEventListener(
             "click",
@@ -1404,7 +1596,9 @@ Happy Birthdayyyy! 🎂✨
 
               event.stopPropagation();
 
-              openImage(imageURL);
+              openImage(
+                imageURL
+              );
 
             }
           );
@@ -1412,17 +1606,15 @@ Happy Birthdayyyy! 🎂✨
         }
 
 
-        /* Same photo ko dobara select karne ke liye */
-
         this.value = "";
 
       }
     );
 
 
-    /* ==================================
+    /* =========================
        MUSIC
-    ================================== */
+    ========================= */
 
     let musicPlaying = false;
 
@@ -1430,10 +1622,14 @@ Happy Birthdayyyy! 🎂✨
     function toggleMusic() {
 
       const music =
-        document.getElementById("music");
+        document.getElementById(
+          "music"
+        );
 
       const button =
-        document.getElementById("musicBtn");
+        document.getElementById(
+          "musicBtn"
+        );
 
 
       if (musicPlaying) {
@@ -1447,37 +1643,49 @@ Happy Birthdayyyy! 🎂✨
 
       } else {
 
-        music.play();
+        music.play()
+          .then(() => {
 
-        button.textContent =
-          "🔊";
+            button.textContent =
+              "🔊";
 
-        musicPlaying = true;
+            musicPlaying = true;
+
+          })
+          .catch(() => {
+
+            console.log(
+              "Music could not play."
+            );
+
+          });
 
       }
 
     }
 
 
-    /* ==================================
+    /* =========================
        ESC KEY
-    ================================== */
+    ========================= */
 
     document.addEventListener(
       "keydown",
       e => {
 
         if (e.key === "Escape") {
+
           closeImage();
+
         }
 
       }
     );
 
 
-    /* ==================================
+    /* =========================
        INITIAL CONFETTI
-    ================================== */
+    ========================= */
 
     setTimeout(() => {
 
